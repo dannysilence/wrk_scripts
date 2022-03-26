@@ -1,0 +1,170 @@
+hello, world!
+
+so far we have some load being done
+
+let's see if we can put more?
+because my cpu going up to 100%
+
+well, looks yes. let's try
+
+- each time i'm editing the script a bit - targets are changing sometimes..but the major kites are still alive. so I remove the small fish, add one big, and set the numbers of threads and connections even more
+
+
+again, my cpu is almost 100% and keep runnig more jobs will just slow down the load  because of a nature of HTTP communication done between computers and processors  are simply waiting for response
+
+
+keep running less jobs (threads) with wrk may provide you way better results , you can test it out and sample web server of your choise
+
+
+
+
+
+
+
+
+
+
+
+I already saw 50-60mbps values and now its being down a bit.. so I will not add more.. see if we can win some additional gain with a different ways
+
+
+cpu through yet has some potential. 
+
+okay , let's move on. the pilots and sirens are keep crying, so i keep working too bitches :)
+
+
+
+
+suddenly i realized I have just 2 aims from previous runs left.. so will just try if some well-known targets are yet alive.. I heard about ria.ru, kp.ru, mk.ru.. let's try any and peek the one which works
+
+
+they say huylo loves most of all komsomol pravda, so i love it too :) just with a different kind of love
+
+
+
+
+
+
+
+
+
+while trying curl -L kp.ru I noticed kpcdn.net, its being pinged fine. but no response for curl. seems they hold my connection, bastards. i would not touch kpcdn, but still will focus on kp.ru, hope he likes paper news beacuse digital should not work for such persons
+
+
+okay, moving on.. nice - they respond fast and do they job hard - returning lots of data to some tiny request. which I appeariciate and will start
+
+
+
+
+
+
+it says now in nano my file is already opened. quick question - no, answer - to kill use sudo kill -9 <PID>
+
+ 
+in my case PID 3870 already dead, but nano still complains. that's because it stores temporary file neaR orignal one named as .<name>.swp => runit.sh => .runit.sh.swp
+
+just drop it too and no complains anymore.
+
+
+
+
+success :)
+
+let me change the track 
+
+
+
+the 2 vms are totaly idling yet and the torified load for the targets varies between 30-70 Mbps. notice - its already going through tor and I am a single person with a single running pc
+
+
+later on I will go and take the second one to be used with 
+parallel ISPs. okay, starting here last 2 VMs, no sence to run more, I guess
+
+
+
+
+
+
+
+
+
+sometimes it may not be clear if your proxying or nor.
+I do these same command twice around service tor start to ensure:
+
+curl -L jsonip.com
+service tor start
+torsocks curl -L jsonip.com
+
+
+
+smart guys and girls could notice it's not fair - but that the case when you just started vm. and tor is not running.
+
+
+in fact, you should always check with these set: 
+
+
+torsocks curl -L jsonip.com
+service tor start
+torsocks curl -L jsonip.com
+
+but when you start vm, tor service is inactive, and first call fails with dns related error. which is also fine, if second curl workd. in case first curl done clear, no torsocks placed in before  - I just receive my regular public "IP v4" address.
+
+looks.. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+look.. now rate is lowest value for the past tryies..
+
+so i will stop this started processes.
+
+
+
+again, to keep VM idle and running for other purposes I kill only processes of torsocks/wrk ! definitely!! CPU got 100%, bandwidth started to decrease significantly. that's exectly the cased CPUs are started to exhause on awaiting responses and doing redundant job on context synchronizations for those threads started on these CPUs.. that's why less thread may and frequently do result in higher bandwith [ with wrk/wrk2 tools] 
+
+
+now, last batch is yet started, bandwith is yet >20Mbps
+
+
+doing sudo kill -9 $(ps -C wrk -o pid=) will kill them'all :)
+
+
+I wish there would be same way with russian troops and goverment, but not yet that time :)
+
+
+
+
+let's check.. killed last batch increased bandwith almost 2ce
+
+so remember not to start too much! all jobs staretd with 
+-d259200 argument, which means 3 days in seconds , so I can sometimes just verify it works fine or, if target changed/dead/me bored - do anything else.
+
+I will kill one mroe batch, expecting to see aroung 60Mbps on this PC. and VM will be shutted down, that's it for now.
+
+thanks for wathching. 
