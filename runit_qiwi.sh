@@ -9,6 +9,11 @@ NUM1=$(($NUM0*4))
 NUM2=$(($NUM1*4))
 DLEN=$((3*3600*24))
 URLS=(
+  "https://mid.ru:443/"
+   "http://mid.ru:80/"
+  "https://kremlin.ru:443/"
+   "http://kremlin.ru:80/"
+  "https://qiwi.com"
   "https://checkout.qiwi.com/"
   "https://alfagroup.ru:443/"
   "https://rt.com:443/"
