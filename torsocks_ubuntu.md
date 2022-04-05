@@ -34,3 +34,14 @@ torsocks curl -L jsonip.com
 ```bash
 torsocks ./db1000n 
 ```
+
+
+#  Find Tor Nodes in specific country
+Go to https://metrics.torproject.org/rs.html#search/ru
+
+To use specific Nodes from the search result you may use Node's fingerprint or IP address in ExitNodes entry of the torrc config.
+
+So to use Nodes 95.214.54.70, 82.165.116.173 and 185.32.222.237 addthe following entry to `/etc/tor/torrc` file:
+```
+ExitNodes 95.214.54.70,82.165.116.173,185.32.222.237
+```
