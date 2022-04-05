@@ -25,6 +25,11 @@ echo "ConnLimit 32267" | sudo tee -a /etc/tor/torrc > /dev/null
 sudo service tor start
 ```
 
+# Check you have eah time new IP used
+```bash
+torsocks curl -L jsonip.com
+```
+
 # Run
 ```bash
 torsocks ./db1000n 
