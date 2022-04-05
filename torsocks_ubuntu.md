@@ -26,6 +26,7 @@ sudo service tor start
 ```
 
 # Check you have eah time new IP used
+Repeat this command multiple times to verify youd indeed have each time new IP address used:
 ```bash
 torsocks curl -L jsonip.com
 ```
