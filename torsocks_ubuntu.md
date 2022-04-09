@@ -38,7 +38,7 @@ torsocks ./db1000n
 
 
 #  Find Tor Nodes in specific country
-Go to https://metrics.torproject.org/rs.html#search/ru
+Go to https://metrics.torproject.org/rs.html#search/country:ru
 
 To use specific Nodes from the search result you may use Node's fingerprint or IP address in ExitNodes entry of the torrc config.
 
