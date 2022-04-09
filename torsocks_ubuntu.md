@@ -25,7 +25,7 @@ echo "ConnLimit 32267" | sudo tee -a /etc/tor/torrc > /dev/null
 sudo service tor start
 ```
 
-# Check you have eah time new IP used
+# Check you have each time new IP used
 Repeat this command multiple times to verify youd indeed have each time new IP address used:
 ```bash
 torsocks curl -L jsonip.com
