@@ -8,7 +8,7 @@ Install tools and download db1000n
 ```bash
 sudo apt-get -y update && \
 sudo apt-get -y install tor torsocks wget curl && \
-wget https://github.com/Arriven/db1000n/releases/download/v0.8.17/db1000n_0.8.17_linux_amd64.tar.gz -O db1000n.tar.gz && \
+wget https://github.com/Arriven/db1000n/releases/download/v0.8.21/db1000n_0.8.21_linux_amd64.tar.gz -O db1000n.tar.gz && \
 tar xvzf db1000n.tar.gz -C ./
 ```
 
