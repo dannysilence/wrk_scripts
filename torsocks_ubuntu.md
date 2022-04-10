@@ -1,4 +1,4 @@
-# Installing tor, torsocks, wget 
+# Installing tor and db1000n
 
 Install tools and download db1000n 
 ```bash
