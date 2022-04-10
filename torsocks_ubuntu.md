@@ -1,3 +1,5 @@
+If you have Windows computer - the same instructions work well with WSL distributions, so go ahead and configure Windows Subsystem for Linux in your Windows PC.
+
 # Installing tor and db1000n
 
 Install tools and download db1000n 
