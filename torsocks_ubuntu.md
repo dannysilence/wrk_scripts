@@ -35,7 +35,11 @@ torsocks curl -L jsonip.com
 ```bash
 torsocks ./db1000n 
 ```
+At this point you already running the attack. 
+You may start multiple instances to get more load generated. 
+You also may start such attack in multiple VMs (or EC2/Azure/GCE) instances to produce even more load.
 
+The next topic is about configuring exit nodes at specific locations (for instance if you need to attack from RU internet segment).
 
 #  Find Tor Nodes in specific country
 Go to https://metrics.torproject.org/rs.html
