@@ -26,7 +26,7 @@ sudo service tor start
 ```
 
 # Check you have each time new IP used
-Repeat this command multiple times to verify youd indeed have each time new IP address used:
+Repeat this command multiple times to verify you indeed have each time new IP address:
 ```bash
 torsocks curl -L jsonip.com
 ```
