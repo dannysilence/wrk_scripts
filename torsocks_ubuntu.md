@@ -74,6 +74,18 @@ So to use Nodes 95.214.54.70, 82.165.116.173 and 185.32.222.237 addthe following
 ExitNodes 95.214.54.70,82.165.116.173,185.32.222.237
 ```
 
+There is also a bit simplier way to get specific counttry location.
+Instead of specifiying strict nodes IP addresses, we can use mnemonic 
+country code `{ru}` to specify the desired outgoing location we would like to get in:
+```bash
+# this is the most end of /etc/tor/torrc file, 
+# above these lines are tons of custom config
+# options mainly commented with sharp sign
+
+ExitNodes {ru}
+ConnLimit 32627
+```
+
 # More information about configuring Tor
 - [torrc man page](https://manpages.debian.org/testing/tor/torrc.5.en.html)
 - [torsocks.conf details](https://linux.die.net/man/5/torsocks.conf)
