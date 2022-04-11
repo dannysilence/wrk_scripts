@@ -42,7 +42,7 @@ torsocks curl -L jsonip.com
 torsocks ./db1000n 
 ```
 At this point you already running the attack. 
-You may start multiple instances to get more load generated - due to `IsolatePID 1` option in torsocks, everything you start as separate process get separate nmodes used, and as result separate IP address at the exit node.
+You may start multiple instances to get more load generated - due to `IsolatePID 1` option in torsocks, everything you start as separate process get separate nodes used, and as result separate IP address at the exit node.
 You also may start such attack in multiple VMs (or EC2/Azure/GCE) instances to produce even more load.
 
 The next topic is about configuring exit nodes at specific locations (for instance if you need to attack from RU internet segment).
