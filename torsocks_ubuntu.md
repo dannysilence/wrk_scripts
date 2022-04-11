@@ -39,6 +39,19 @@ Repeat this command multiple times to verify you indeed have each time new IP ad
 torsocks curl -L jsonip.com
 ```
 
+You should get something similar to the following (definitely with different IPs in your case):
+```bash
+$ torsocks curl -L jsonip.com
+{"ip":"91.92.109.43","geo-ip":"https://getjsonip.com/#plus","API Help":"https://getjsonip.com/#docs"}
+$ torsocks curl -L jsonip.com
+{"ip":"178.17.174.164","geo-ip":"https://getjsonip.com/#plus","API Help":"https://getjsonip.com/#docs"}
+$ torsocks curl -L jsonip.com
+{"ip":"185.163.204.44","geo-ip":"https://getjsonip.com/#plus","API Help":"https://getjsonip.com/#docs"}
+$ torsocks curl -L jsonip.com
+{"ip":"178.17.170.174","geo-ip":"https://getjsonip.com/#plus","API Help":"https://getjsonip.com/#docs"}
+$
+```
+
 # Run
 ```bash
 torsocks ./db1000n 
