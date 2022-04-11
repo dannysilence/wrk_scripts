@@ -1,6 +1,8 @@
 The following instructions allow you to participate in russian sites attack without using any 3rd party VPN, and hence without sharing your personal data with suspicious VPN resource providers and without spending any money resources for such services.
 
-Demo at [YouTube](https://www.youtube.com/watch?v=AVqajaICvt0).
+Demo at [YouTube](https://www.youtube.com/watch?v=AVqajaICvt0) using db1000n in clean Ubuntu VM.
+Similar [demo](https://www.youtube.com/watch?v=QKLkvq8iNo0) of using tor  with wrk load test tool.
+In fact you may run almost any command line tool with torsocks in front. Exceptions are ping/hping and other tools that use raw or udp sockets.
 
 If you have Windows computer - the same instructions work well with WSL distributions, so go ahead and configure Windows Subsystem for Linux in your Windows PC. Personally I am using Kali Linux distribution in WSL on all my Windows PCs (sample of using LattePanda Delta can be watched [here](https://youtu.be/v1v2OhcfwFw) ).
 
