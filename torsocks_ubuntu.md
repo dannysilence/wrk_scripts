@@ -77,3 +77,4 @@ ExitNodes 95.214.54.70,82.165.116.173,185.32.222.237
 # More information about configuring Tor
 - [torrc man page](https://manpages.debian.org/testing/tor/torrc.5.en.html)
 - [torsocks.conf details](https://linux.die.net/man/5/torsocks.conf)
+- [DNS over Tor](https://developers.cloudflare.com/1.1.1.1/other-ways-to-use-1.1.1.1/dns-over-tor/)
