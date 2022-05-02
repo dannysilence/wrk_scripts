@@ -74,7 +74,7 @@ So to use Nodes 95.214.54.70, 82.165.116.173 and 185.32.222.237 addthe following
 ExitNodes 95.214.54.70,82.165.116.173,185.32.222.237
 ```
 
-There is also a bit simplier way to get specific counttry location.
+There is also a bit simplier way to get specific country location.
 Instead of specifiying strict nodes IP addresses, we can use mnemonic 
 country code `{ru}` to specify the desired outgoing location we would like to get in:
 ```bash
